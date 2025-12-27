@@ -1,33 +1,34 @@
-1)What is NumPy?
-NumPy is a Python library used for working with arrays.
+1)Create a NumPy ndarray Object
 
-It also has functions for working in domain of linear algebra, fourier transform, and matrices.
-
-NumPy was created in 2005 by Travis Oliphant. It is an open source project and you can use it freely.
-
-NumPy stands for Numerical Python.
-
-2)Why Use NumPy?
-
-In Python we have lists that serve the purpose of arrays, but they are slow to process.
-
-3)Why is NumPy Faster Than Lists?
-
-NumPy arrays are stored at one continuous place in memory unlike lists, so processes can access and manipulate them very efficiently.
-
-4)Which Language is NumPy written in?
-
-NumPy is a Python library and is written partially in Python, but most of the parts that require fast computation are written in C or C++.
-
-5)Installation of NumPy
-
-pip install numpy
-
-6)Checking NumPy Version
+NumPy is used to work with arrays. The array object in NumPy is called ndarray.
 
 import numpy as np
 
-print(np.__version__)
-    
+arr = np.array([1, 2, 3, 4, 5])
 
-    
+print(arr)
+
+print(type(arr))
+
+2)Dimensions in Arrays
+
+import numpy as np
+
+a = np.array(42)
+b = np.array([1, 2, 3, 4, 5])
+c = np.array([[1, 2, 3], [4, 5, 6]])
+d = np.array([[[1, 2, 3], [4, 5, 6]], [[1, 2, 3], [4, 5, 6]]])
+
+print(a.ndim)
+print(b.ndim)
+print(c.ndim)
+print(d.ndim)
+
+3)Create an array with 5 dimensions and verify that it has 5 dimensions:
+import numpy as np
+
+arr = np.array([1, 2, 3, 4], ndmin=5)
+
+print(arr)
+print('number of dimensions :', arr.ndim)
+

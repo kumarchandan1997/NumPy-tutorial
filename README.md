@@ -55,3 +55,31 @@ Install NumPy using `pip`:
 
 ```bash
 pip install numpy
+
+---
+
+## 4️⃣ Difference Between Copy and View in NumPy
+
+The main difference between a **copy** and a **view** of an array is:
+
+- **Copy** → Creates a **new array**
+- **View** → Creates a **reference (view) of the original array**
+
+---
+
+### 🔹 NumPy Copy
+- Copy **owns its own data**
+- Changes in the copy **do NOT affect** the original array
+- Changes in the original array **do NOT affect** the copy
+
+#### Example:
+```python
+import numpy as np
+
+arr = np.array([1, 2, 3, 4, 5])
+copy_arr = arr.copy()
+
+copy_arr[0] = 99
+
+print("Original Array:", arr)
+print("Copied Array:", copy_arr)
