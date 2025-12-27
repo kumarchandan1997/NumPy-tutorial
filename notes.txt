@@ -1,0 +1,33 @@
+1)What is NumPy?
+NumPy is a Python library used for working with arrays.
+
+It also has functions for working in domain of linear algebra, fourier transform, and matrices.
+
+NumPy was created in 2005 by Travis Oliphant. It is an open source project and you can use it freely.
+
+NumPy stands for Numerical Python.
+
+2)Why Use NumPy?
+
+In Python we have lists that serve the purpose of arrays, but they are slow to process.
+
+3)Why is NumPy Faster Than Lists?
+
+NumPy arrays are stored at one continuous place in memory unlike lists, so processes can access and manipulate them very efficiently.
+
+4)Which Language is NumPy written in?
+
+NumPy is a Python library and is written partially in Python, but most of the parts that require fast computation are written in C or C++.
+
+5)Installation of NumPy
+
+pip install numpy
+
+6)Checking NumPy Version
+
+import numpy as np
+
+print(np.__version__)
+    
+
+    
