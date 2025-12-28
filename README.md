@@ -56,6 +56,8 @@ Install NumPy using `pip`:
 ```bash
 pip install numpy
 
+```
+
 ---
 
 ## 4️⃣ Difference Between Copy and View in NumPy
@@ -83,6 +85,8 @@ copy_arr[0] = 99
 
 print("Original Array:", arr)
 print("Copied Array:", copy_arr)
+
+```
 
 
 ## 🎲 What is Random Seed in NumPy?
@@ -113,6 +117,8 @@ With a seed:
 Use:
 ```python
 np.random.seed(value)
+
+```
 
 
 ## 🔹 Dot Product in NumPy
@@ -149,6 +155,8 @@ b = np.array([4, 5, 6])
 
 result = np.dot(a, b)
 print(result)
+
+```
 
 
 ## 🔢 Comparison Operators and Sorting in NumPy
@@ -192,6 +200,8 @@ arr = np.array([10, 20, 30, 40])
 
 print(arr > 25)
 
+```
+
 
 ## 🖼️ Image to NumPy Array
 
@@ -224,5 +234,7 @@ An image is essentially:
 ### Step 1: Install Pillow
 ```bash
 pip install pillow
+
+```
 
 
