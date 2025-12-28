@@ -1,23 +1,13 @@
+from PIL import Image
 import numpy as np
 
-arr = np.array([1,2,3,4,5])
 
-copy = arr.copy()
+img =Image.open("dummyaddharback.png")
 
-view = arr.view()
 
-print(arr)
+img_array = np.array(img)
 
-copy[0] = 123
-print(copy)
+print(img_array)
 
-arr[1] =12344
-
-print(view)
-
-print(arr)
-
-emp = np.empty(3)
-
-print(emp)
-
+print(type(img_array))
+print(img_array.shapeclear)

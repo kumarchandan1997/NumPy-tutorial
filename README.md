@@ -83,3 +83,146 @@ copy_arr[0] = 99
 
 print("Original Array:", arr)
 print("Copied Array:", copy_arr)
+
+
+## 🎲 What is Random Seed in NumPy?
+
+In NumPy, a **random seed** is used to **control the randomness** of random number generation.
+
+👉 Setting a seed ensures that **random numbers are reproducible** — meaning you get the **same output every time** you run the code.
+
+---
+
+## 🔹 Why Do We Need a Random Seed?
+Random numbers are used in:
+- Data science experiments
+- Machine learning models
+- Testing and debugging
+- Simulations
+
+Without a seed:
+- Output changes every time
+
+With a seed:
+- Output remains **constant and predictable**
+
+---
+
+## 🔹 Setting a Random Seed in NumPy
+
+Use:
+```python
+np.random.seed(value)
+
+
+## 🔹 Dot Product in NumPy
+
+The **dot product** is one of the most important operations in mathematics, data analysis, and machine learning.
+
+It is used to:
+- Combine two vectors
+- Perform matrix multiplication
+- Calculate similarity between vectors
+- Build ML & Deep Learning models
+
+---
+
+## 📌 What is Dot Product?
+
+### For Vectors
+The dot product of two vectors is the **sum of the products of corresponding elements**.
+
+### Formula:
+\[
+A \cdot B = a_1b_1 + a_2b_2 + \dots + a_nb_n
+\]
+
+---
+
+## 🧮 Example 1: Dot Product of Two Vectors
+
+```python
+import numpy as np
+
+a = np.array([1, 2, 3])
+b = np.array([4, 5, 6])
+
+result = np.dot(a, b)
+print(result)
+
+
+## 🔢 Comparison Operators and Sorting in NumPy
+
+NumPy provides powerful **comparison** and **sorting** operations that are widely used in:
+- Data analysis
+- Filtering datasets
+- Machine learning preprocessing
+- Statistical analysis
+
+---
+
+# 🔹 1. Comparison Operators in NumPy
+
+### 📌 What are Comparison Operators?
+Comparison operators are used to **compare array elements** and return **Boolean values (True / False)**.
+
+NumPy performs **element-wise comparison**.
+
+---
+
+## ✅ Common Comparison Operators
+
+| Operator | Meaning |
+|-------|--------|
+| `==` | Equal to |
+| `!=` | Not equal to |
+| `>` | Greater than |
+| `<` | Less than |
+| `>=` | Greater than or equal to |
+| `<=` | Less than or equal to |
+
+---
+
+## 🧮 Example 1: Element-wise Comparison
+
+```python
+import numpy as np
+
+arr = np.array([10, 20, 30, 40])
+
+print(arr > 25)
+
+
+## 🖼️ Image to NumPy Array
+
+In data science, machine learning, and computer vision, images are converted into
+**NumPy arrays** so that we can perform:
+- Mathematical operations
+- Image processing
+- Feature extraction
+- Model training (CNNs, ML models)
+
+---
+
+## 📌 Why Convert Image to NumPy Array?
+
+An image is essentially:
+- A grid of pixels
+- Each pixel has numerical values
+
+👉 NumPy allows:
+- Fast computation
+- Easy slicing & reshaping
+- Compatibility with ML libraries
+
+📌 **Images = Numbers = NumPy Arrays**
+
+---
+
+## 🔹 Method 1: Using Pillow (PIL) – Most Common
+
+### Step 1: Install Pillow
+```bash
+pip install pillow
+
+
